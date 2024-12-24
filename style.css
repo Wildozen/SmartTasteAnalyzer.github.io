@@ -1,0 +1,86 @@
+/* Animasi Halus */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #00ffcc, #265f0e);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 4rem;
+}
+h2 {
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+}
+/* Deskripsi Proyek dengan Tab */
+.tab-content {
+    margin-left: 30px; /* Memberikan indentasi seperti tab */
+    line-height: 1.8; /* Memberikan jarak antarbaris untuk keterbacaan */
+    font-size: 1rem; /* Ukuran teks yang nyaman dibaca */
+    color: #333; /* Warna teks */
+}
+
+.tab-content p {
+    margin-bottom: 20px; /* Memberikan jarak antarparagraf */
+}
+
+.tab-content strong {
+    font-weight: bold; /* Menebalkan teks penting */
+    color: #007bff; /* Menonjolkan teks dengan warna biru */
+}
+
+/* Foto Anggota */
+.foto-anggota {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.foto-anggota:hover {
+    transform: scale(1.1);
+}
+
+/* Poster */
+#poster img {
+    width: 100%; /* Gambar akan memenuhi lebar elemen induk */
+    max-width: 500px; /* Batas lebar maksimal */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Pilihan: Membuat sedikit sudut melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Latar belakang opsional */
+}
+
+/* Footer */
+footer {
+    background-color: #6b6969;
+    color: #ddd;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
